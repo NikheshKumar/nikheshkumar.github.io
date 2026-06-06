@@ -17,9 +17,9 @@
     margin-top: 1em;
   }
 
-  @media screen and (min-width: $sidebar-screen-min-width) {
-  position: sticky;
-  top: $masthead-height;
+
+   @media screen and (min-width: $sidebar-screen-min-width) {
+  position: relative;
   height: auto;
   overflow-y: visible;
   padding-top: 0;
