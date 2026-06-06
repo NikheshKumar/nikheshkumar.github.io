@@ -1,6 +1,7 @@
 ---
 title: "Some thoughts on Alignment faking in LLMs"
 date: 2026-06-06
+modified: 2026-06-07
 permalink: /posts/2026/06/alignment-faking-in-llms/
 tags:
   - AI Safety
