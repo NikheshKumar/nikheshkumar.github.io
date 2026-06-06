@@ -1,187 +1,416 @@
 <!doctype html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Nikhesh Kumar Murali</title>
+
   <meta name="description" content="Associate Data Scientist at Virtusa Corp.">
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+
   <style>
+
     :root {
+
       --text: #1b1714;
+
       --muted: #5f5349;
+
       --link: #8b2f2f;
+
       --link-hover: #5f1f1f;
+
       --paper: #f4ede4;
+
     }
+
+
 
     * {
+
       box-sizing: border-box;
+
     }
 
+
+
     body {
-  margin: 0;
-  background: var(--paper);
-  color: var(--text);
-  font-family: "Source Serif 4", Georgia, serif;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
 
-  <nav class="side-links" aria-label="External links">
-  <a href="https://github.com/NikheshKumar" target="_blank" rel="noreferrer">github</a>
-  <a href="/blog/">blog</a>
-  <a href="mailto:nikheshk19@gmail.com">email</a>
-  <a href="https://www.linkedin.com/in/nikhesh-kumar-murali-45317483/" target="_blank" rel="noreferrer">linkedin</a>
-</nav>
+      margin: 0;
 
-main {
-  width: min(760px, calc(100vw - 48px));
-  margin-left: clamp(180px, 24vw, 430px);
-  margin-right: auto;
-  padding: 88px 0 70px;
-}
+      background: var(--paper);
 
-.side-links {
-  position: fixed;
-  left: clamp(24px, 8vw, 120px);
-  top: 92px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-size: 14px;
-  line-height: 1.3;
-}
+      color: var(--text);
 
-.side-links a {
-  color: var(--muted);
-  text-decoration: none;
-}
+      font-family: Georgia, "Times New Roman", serif;
 
-.side-links a:hover {
-  color: var(--link-hover);
-  text-decoration: underline;
-}
+      -webkit-font-smoothing: antialiased;
 
-.links {
-  display: none;
-}
+      text-rendering: optimizeLegibility;
 
-.content p,
-.content li {
-  font-size: 15px;
-  line-height: 1.72;
-}
+    }
 
-.tagline {
-  margin: 8px 0 0;
-  max-width: 520px;
-  font-size: 15px;
-  line-height: 1.45;
-  font-weight: 600;
-}
 
-@media (max-width: 700px) {
-  main {
-    width: calc(100vw - 36px);
-    margin-left: 18px;
-    padding: 34px 0 48px;
-  }
 
-  .side-links {
-    position: static;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 18px 18px 0;
-    font-size: 13px;
-  }
+    a {
 
-  .side-links a::after {
-    content: ",";
-  }
+      color: var(--link);
 
-  .side-links a:last-child::after {
-    content: "";
-  }
+      text-decoration: underline;
 
-  .hero {
-    grid-template-columns: 72px 1fr;
-    column-gap: 14px;
-  }
+      text-underline-offset: 0.1em;
 
-  .hero img {
-    width: 72px;
-    height: 72px;
-  }
+    }
 
-  h1 {
-    font-size: 27px;
-  }
 
-  .tagline {
-    font-size: 13.5px;
-  }
 
-  .content p,
-  .content li {
-    font-size: 13.5px;
-  }
-}
-  
-  
+    a:hover {
+
+      color: var(--link-hover);
+
+    }
+
+
+
+    main {
+
+      width: min(760px, calc(100vw - 48px));
+
+      margin-left: clamp(24px, 22vw, 420px);
+
+      margin-right: auto;
+
+      padding: 88px 0 70px;
+
+    }
+
+
+
+    .hero {
+
+      display: grid;
+
+      grid-template-columns: 96px 1fr;
+
+      column-gap: 24px;
+
+      align-items: start;
+
+      margin-bottom: 42px;
+
+    }
+
+
+
+    .hero img {
+
+      width: 84px;
+
+      height: 84px;
+
+      object-fit: cover;
+
+      border-radius: 12px;
+
+    }
+
+
+
+    .title-row {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      align-items: baseline;
+
+      gap: 10px;
+
+      margin: 0;
+
+    }
+
+
+
+    h1 {
+
+      margin: 0;
+
+      font-size: 34px;
+
+      line-height: 1;
+
+      font-weight: 600;
+
+      letter-spacing: -0.03em;
+
+    }
+
+
+
+    .links {
+
+      margin: 0;
+
+      font-size: 12px;
+
+      line-height: 1.4;
+
+      color: var(--muted);
+
+    }
+
+
+
+    .tagline {
+
+      margin: 8px 0 0;
+
+      max-width: 520px;
+
+      font-size: 14px;
+
+      line-height: 1.4;
+
+      font-weight: 700;
+
+    }
+
+
+
+    .content {
+
+      max-width: 720px;
+
+    }
+
+
+
+    .content p,
+
+    .content li {
+
+      font-size: 14px;
+
+      line-height: 1.65;
+
+    }
+
+
+
+    .content p {
+
+      margin: 0 0 12px;
+
+    }
+
+
+
+    .content ul {
+
+      margin: 0 0 14px 28px;
+
+      padding: 0;
+
+    }
+
+
+
+    .content li {
+
+      margin-bottom: 5px;
+
+    }
+
+
+
+    @media (max-width: 700px) {
+
+      main {
+
+        width: calc(100vw - 36px);
+
+        margin-left: 18px;
+
+        padding: 34px 0 48px;
+
+      }
+
+
+
+      .hero {
+
+        grid-template-columns: 72px 1fr;
+
+        column-gap: 14px;
+
+      }
+
+
+
+      .hero img {
+
+        width: 72px;
+
+        height: 72px;
+
+      }
+
+
+
+      h1 {
+
+        font-size: 27px;
+
+      }
+
+
+
+      .links {
+
+        width: 100%;
+
+      }
+
+
+
+      .tagline {
+
+        font-size: 13px;
+
+      }
+
+
+
+      .content p,
+
+      .content li {
+
+        font-size: 13px;
+
+      }
+
+    }
+
   </style>
+
 </head>
 
+
+
 <body>
+
   <main>
+
     <section class="hero" aria-label="Introduction">
+
       <img src="/images/profile.png" alt="Nikhesh Kumar Murali">
 
+
+
       <div>
-          <div class="title-row">
+
+        <div class="title-row">
+
           <h1>Nikhesh Kumar Murali</h1>
+
+          <p class="links">
+
+            (<a href="https://github.com/NikheshKumar" target="_blank" rel="noreferrer">github</a>,
+
+            <a href="/blog/">blog</a>,
+
+            <a href="mailto:nikheshk19@gmail.com">email</a>,
+
+            <a href="https://www.linkedin.com/in/nikhesh-kumar-murali-45317483/" target="_blank" rel="noreferrer">linkedin</a>)
+
+          </p>
+
         </div>
 
+
+
         <p class="tagline">
+
           Associate Data Scientist at Virtusa Corp.
+
         </p>
+
       </div>
+
     </section>
+
+
 
     <section class="content" aria-label="Bio">
-      <p>
-        I am currently an Associate Data Scientist at Virtusa Corp, India.
-        I previously majored in mathematics as an undergraduate at
-        <a href="https://iisc.ac.in/" target="_blank" rel="noreferrer">IISc Bengaluru</a>,
-        where my bachelor’s thesis focused on metric geometry.
-      </p>
 
       <p>
-        I later explored Fuchsian groups and hyperbolic geometry for my integrated master’s project.
-        I completed my joint master’s degree in Data Science and Artificial Intelligence from
-        <a href="https://www.iitm.ac.in/" target="_blank" rel="noreferrer">IIT Madras</a>
-        and the
-        <a href="https://www.birmingham.ac.uk/" target="_blank" rel="noreferrer">University of Birmingham</a>.
+
+        I am currently an Associate Data Scientist at Virtusa Corp, India.
+
+        I previously majored in mathematics as an undergraduate at
+
+        <a href="https://iisc.ac.in/" target="_blank" rel="noreferrer">IISc Bengaluru</a>,
+
+        where my bachelor’s thesis focused on metric geometry.
+
       </p>
+
+
+
+      <p>
+
+        I later explored Fuchsian groups and hyperbolic geometry for my integrated master’s project.
+
+        I completed my joint master’s degree in Data Science and Artificial Intelligence from
+
+        <a href="https://www.iitm.ac.in/" target="_blank" rel="noreferrer">IIT Madras</a>
+
+        and the
+
+        <a href="https://www.birmingham.ac.uk/" target="_blank" rel="noreferrer">University of Birmingham</a>.
+
+      </p>
+
+
 
       <p><strong>Current research interests.</strong></p>
+
       <ul>
+
         <li>AI safety, alignment, and mechanistic interpretability.</li>
+
         <li>Reinforcement learning.</li>
-        <li>Geometry and their links to representation learning.</li>
+
+        <li>Geometry and its links to representation learning.</li>
+
       </ul>
+
+
 
       <p><strong>Writing.</strong></p>
+
       <ul>
+
         <li><a href="/blog/">Blog posts</a> on AI, mathematics, interpretability, and research notes.</li>
+
       </ul>
 
+
+
     </section>
+
   </main>
+
 </body>
+
 </html>
+
+
+
