@@ -20,6 +20,7 @@
 
    @media screen and (min-width: $sidebar-screen-min-width) {
   position: relative;
+  top: auto;
   height: auto;
   overflow-y: visible;
   padding-top: 0;
