@@ -6,6 +6,11 @@
   <title>Nikhesh Kumar Murali</title>
   <meta name="description" content="Associate Data Scientist at Virtusa Corp.">
 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
     :root {
       --text: #1b1714;
@@ -20,134 +25,115 @@
     }
 
     body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: "Source Serif 4", Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
 
-    a {
-      color: var(--link);
-      text-decoration: underline;
-      text-underline-offset: 0.1em;
-    }
+  <nav class="side-links" aria-label="External links">
+  <a href="https://github.com/NikheshKumar" target="_blank" rel="noreferrer">github</a>
+  <a href="/blog/">blog</a>
+  <a href="mailto:nikheshk19@gmail.com">email</a>
+  <a href="https://www.linkedin.com/in/nikhesh-kumar-murali-45317483/" target="_blank" rel="noreferrer">linkedin</a>
+</nav>
 
-    a:hover {
-      color: var(--link-hover);
-    }
+main {
+  width: min(760px, calc(100vw - 48px));
+  margin-left: clamp(180px, 24vw, 430px);
+  margin-right: auto;
+  padding: 88px 0 70px;
+}
 
-    main {
-      width: min(760px, calc(100vw - 48px));
-      margin-left: clamp(24px, 22vw, 420px);
-      margin-right: auto;
-      padding: 88px 0 70px;
-    }
+.side-links {
+  position: fixed;
+  left: clamp(24px, 8vw, 120px);
+  top: 92px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.3;
+}
 
-    .hero {
-      display: grid;
-      grid-template-columns: 96px 1fr;
-      column-gap: 24px;
-      align-items: start;
-      margin-bottom: 42px;
-    }
+.side-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
 
-    .hero img {
-      width: 84px;
-      height: 84px;
-      object-fit: cover;
-      border-radius: 12px;
-    }
+.side-links a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
 
-    .title-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      gap: 10px;
-      margin: 0;
-    }
+.links {
+  display: none;
+}
 
-    h1 {
-      margin: 0;
-      font-size: 34px;
-      line-height: 1;
-      font-weight: 600;
-      letter-spacing: -0.03em;
-    }
+.content p,
+.content li {
+  font-size: 15px;
+  line-height: 1.72;
+}
 
-    .links {
-      margin: 0;
-      font-size: 12px;
-      line-height: 1.4;
-      color: var(--muted);
-    }
+.tagline {
+  margin: 8px 0 0;
+  max-width: 520px;
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 600;
+}
 
-    .tagline {
-      margin: 8px 0 0;
-      max-width: 520px;
-      font-size: 14px;
-      line-height: 1.4;
-      font-weight: 700;
-    }
+@media (max-width: 700px) {
+  main {
+    width: calc(100vw - 36px);
+    margin-left: 18px;
+    padding: 34px 0 48px;
+  }
 
-    .content {
-      max-width: 720px;
-    }
+  .side-links {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 18px 18px 0;
+    font-size: 13px;
+  }
 
-    .content p,
-    .content li {
-      font-size: 14px;
-      line-height: 1.65;
-    }
+  .side-links a::after {
+    content: ",";
+  }
 
-    .content p {
-      margin: 0 0 12px;
-    }
+  .side-links a:last-child::after {
+    content: "";
+  }
 
-    .content ul {
-      margin: 0 0 14px 28px;
-      padding: 0;
-    }
+  .hero {
+    grid-template-columns: 72px 1fr;
+    column-gap: 14px;
+  }
 
-    .content li {
-      margin-bottom: 5px;
-    }
+  .hero img {
+    width: 72px;
+    height: 72px;
+  }
 
-    @media (max-width: 700px) {
-      main {
-        width: calc(100vw - 36px);
-        margin-left: 18px;
-        padding: 34px 0 48px;
-      }
+  h1 {
+    font-size: 27px;
+  }
 
-      .hero {
-        grid-template-columns: 72px 1fr;
-        column-gap: 14px;
-      }
+  .tagline {
+    font-size: 13.5px;
+  }
 
-      .hero img {
-        width: 72px;
-        height: 72px;
-      }
-
-      h1 {
-        font-size: 27px;
-      }
-
-      .links {
-        width: 100%;
-      }
-
-      .tagline {
-        font-size: 13px;
-      }
-
-      .content p,
-      .content li {
-        font-size: 13px;
-      }
-    }
+  .content p,
+  .content li {
+    font-size: 13.5px;
+  }
+}
+  
+  
   </style>
 </head>
 
@@ -157,14 +143,8 @@
       <img src="/images/profile.png" alt="Nikhesh Kumar Murali">
 
       <div>
-        <div class="title-row">
+          <div class="title-row">
           <h1>Nikhesh Kumar Murali</h1>
-          <p class="links">
-            (<a href="https://github.com/NikheshKumar" target="_blank" rel="noreferrer">github</a>,
-            <a href="/blog/">blog</a>,
-            <a href="mailto:nikheshk19@gmail.com">email</a>,
-            <a href="https://www.linkedin.com/in/nikhesh-kumar-murali-45317483/" target="_blank" rel="noreferrer">linkedin</a>)
-          </p>
         </div>
 
         <p class="tagline">
