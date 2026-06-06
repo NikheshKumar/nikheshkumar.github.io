@@ -1,10 +1,10 @@
 ---
-permalink: /
+permalink: /about/
 title: "Nikhesh's personal webpage"
 author_profile: true
 redirect_from: 
   - /about/
-  - /about.html
+  - /about.md
 ---
 
 Welcome to my personal webpage. I am currently an Associate Data Scientist at [Virtusa Corp](https://www.virtusa.com/), India.
