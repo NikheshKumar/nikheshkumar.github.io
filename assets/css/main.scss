@@ -42,19 +42,142 @@
     "vendor/font-awesome/brands"
 ;
 
+:root,
+html[data-theme="light"],
+html[data-theme="dark"] {
+  --global-bg-color: #ffffff;
+  --global-text-color: #000000;
+  --global-text-color-light: #222222;
+  --global-border-color: #dddddd;
+  --global-dark-border-color: #dddddd;
+  --global-footer-bg-color: #ffffff;
+  --global-link-color: #000000;
+  --global-link-color-hover: #444444;
+  --global-masthead-link-color: #000000;
+  --global-masthead-link-color-hover: #000000;
+}
+
+html,
+body {
+  background: #ffffff !important;
+  color: #000000 !important;
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+body,
+.page,
+.archive,
+.sidebar,
+.masthead,
+.page__footer,
+.greedy-nav,
+.greedy-nav a,
+.site-title,
+.page__title,
+.archive__item-title,
+.archive__item-excerpt,
+.page__meta,
 .page__date {
-  color: #51483f;
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+a,
+a:visited {
+  color: #000000 !important;
+}
+
+a:hover {
+  color: #444444 !important;
+}
+
+/* Top navigation */
+.masthead,
+.greedy-nav {
+  background: #ffffff !important;
+  border-bottom: 1px solid #dddddd;
+}
+
+.greedy-nav a {
+  color: #000000 !important;
+  text-decoration: none;
+}
+
+.greedy-nav a:hover,
+.greedy-nav .visible-links a:hover {
+  color: #000000 !important;
+  text-decoration: underline;
+}
+
+/* Blog archive */
+.archive {
+  background: #ffffff !important;
+  max-width: 820px;
+}
+
+.archive .page__title {
+  color: #000000 !important;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.archive__subtitle {
+  color: #000000 !important;
+  border-bottom: 1px solid #dddddd;
+}
+
+.archive__item {
+  margin-bottom: 2.4rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.archive__item-title {
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.archive__item-title a,
+.archive__item-title a:visited {
+  color: #000000 !important;
+  text-decoration-color: #000000;
+}
+
+.archive__item-title a:hover {
+  color: #444444 !important;
+  text-decoration-color: #444444;
+}
+
+.archive__item-excerpt {
+  color: #000000 !important;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+/* Date line */
+.page__date {
+  color: #000000 !important;
   font-size: 0.92rem;
   margin-top: 0.35rem;
   margin-bottom: 1.4rem;
 }
 
 .page__date strong {
-  color: #201a16;
+  color: #000000 !important;
   font-weight: 700;
 }
 
 .date-separator {
   padding: 0 0.35rem;
-  color: #8a7d70;
+  color: #555555;
+}
+
+/* Footer */
+.page__footer {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-top: 1px solid #dddddd;
+}
+
+.page__footer a {
+  color: #000000 !important;
 }
