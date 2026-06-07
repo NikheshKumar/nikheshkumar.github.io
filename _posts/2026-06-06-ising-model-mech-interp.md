@@ -2,7 +2,6 @@
 title: "Some thoughts on Ising model and mechanistic interpretability of Neural Networks"
 date: 2026-06-06
 permalink: /posts/2026/06/ising-model-mech-interp/
-excerpt: "Some thoughts on the Ising model and mechanistic interpretability of Neural Networks"
 tags:
   - AI Safety
   - Alignment
