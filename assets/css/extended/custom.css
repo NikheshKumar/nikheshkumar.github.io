@@ -1,0 +1,12 @@
+/* Homepage: photo beside name, like the previous site */
+.first-entry .entry-header.home-hero { display: flex; flex-direction: row; align-items: center; gap: 18px; overflow: visible; -webkit-line-clamp: unset; }
+.home-hero h1 { margin: 0; }
+.home-avatar { width: 84px; height: 84px; object-fit: cover; border-radius: 12px; margin: 0; }
+.home-info .entry-content { -webkit-line-clamp: unset; display: block; overflow: visible; }
+.home-info .entry-content ul { padding-inline-start: 20px; margin-bottom: 12px; }
+.home-info .entry-content p { margin-bottom: 12px; }
+@media (max-width: 600px) { .home-avatar { width: 64px; height: 64px; } }
+/* About page photo */
+.post-content img[src$="#profile"] { width: 140px; height: 140px; object-fit: cover; border-radius: 12px; margin: 0 0 12px; }
+/* Long display equations scroll on small screens */
+.katex-display { overflow-x: auto; overflow-y: hidden; }

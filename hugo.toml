@@ -1,0 +1,125 @@
+baseURL = 'https://nikheshkumar.github.io/'
+locale = 'en-US'
+title = 'Nikhesh Kumar Murali'
+theme = 'PaperMod'
+timeZone = 'Asia/Kolkata'
+titleCaseStyle = 'none'   # keep tag names exactly as written
+
+enableRobotsTXT = true
+
+# ---------- Keep the old Jekyll URLs working ----------
+# Each post sets `url:` to its old permalink (/posts/2026/06/<slug>/).
+[permalinks.section]
+  posts = '/blog/'                 # post list stays at /blog/
+
+[outputFormats.rss]
+  baseName = 'feed'                # feed stays at /feed.xml
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']   # JSON powers PaperMod search
+
+[services.rss]
+  limit = -1
+
+[pagination]
+  pagerSize = 10
+
+# ---------- Math: LaTeX is rendered to HTML at build time (KaTeX) ----------
+[markup.goldmark.extensions.passthrough]
+  enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+  block  = [['\[', '\]'], ['$$', '$$']]
+  inline = [['\(', '\)'], ['$', '$']]   # write a literal dollar as \$
+
+[markup.highlight]
+  noClasses = false
+
+# ---------- Menu ----------
+[[menus.main]]
+  name = 'Blog'
+  url = '/blog/'
+  weight = 10
+[[menus.main]]
+  name = 'Archive'
+  url = '/archives/'
+  weight = 20
+[[menus.main]]
+  name = 'Tags'
+  url = '/tags/'
+  weight = 30
+[[menus.main]]
+  name = 'Search'
+  url = '/search/'
+  weight = 40
+[[menus.main]]
+  name = 'About'
+  url = '/about/'
+  weight = 50
+
+# ---------- PaperMod ----------
+[params]
+  env = 'production'
+  description = 'Associate Data Scientist at Virtusa Corp.'
+  author = 'Nikhesh Kumar Murali'
+  images = ['/images/profile.png']
+  DateFormat = 'January 02, 2006'
+  defaultTheme = 'auto'
+  mainSections = ['posts']
+
+  ShowReadingTime = true
+  ShowShareButtons = true
+  shareButtons = ['linkedin', 'x', 'facebook']
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShowRssButtonInSectionTermList = true
+
+  [params.homeInfoParams]
+    Title = 'Nikhesh Kumar Murali'
+    Content = '''
+**Associate Data Scientist at Virtusa Corp.**
+
+I am currently an Associate Data Scientist at Virtusa Corp, India. I previously majored in mathematics as an undergraduate at [IISc Bengaluru](https://iisc.ac.in/), where my bachelor’s thesis focused on metric geometry.
+
+I later explored Fuchsian groups and hyperbolic geometry for my integrated master’s project. I completed my joint master’s degree in Data Science and Artificial Intelligence from [IIT Madras](https://www.iitm.ac.in/) and the [University of Birmingham](https://www.birmingham.ac.uk/).
+
+**Current research interests.** I mostly love to think about AI from the perspective of math (optimization), statistical physics, and biology.
+
+- AI safety, alignment, and mechanistic interpretability.
+- Reinforcement learning.
+- Geometry and its links to representation learning.
+
+**Writing.**
+
+- [Blog posts](/blog/) on AI, mathematics, interpretability, and research notes.
+'''
+    imageUrl = '/images/profile.png'
+    imageTitle = 'Nikhesh Kumar Murali'
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/NikheshKumar'
+  [[params.socialIcons]]
+    name = 'email'
+    url = 'mailto:nikheshk19@gmail.com'
+  [[params.socialIcons]]
+    name = 'linkedin'
+    url = 'https://www.linkedin.com/in/nikhesh-kumar-murali-45317483/'
+  [[params.socialIcons]]
+    name = 'goodreads'
+    url = 'https://www.goodreads.com/user/show/82922299'
+  [[params.socialIcons]]
+    name = 'rss'
+    url = '/feed.xml'
+
+  [params.assets]
+    favicon = '/images/favicon.ico'
+    favicon16x16 = '/images/favicon-32x32.png'
+    favicon32x32 = '/images/favicon-32x32.png'
+    apple_touch_icon = '/images/apple-touch-icon-180x180.png'
+    safari_pinned_tab = '/images/favicon.svg'
+
+  [params.fuseOpts]
+    keys = ['title', 'permalink', 'summary', 'content']
