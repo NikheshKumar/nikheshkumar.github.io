@@ -1,6 +1,7 @@
 ---
 title: "Newton-Okounkov bodies"
 date: 2026-06-07
+draft: true
 lastmod: 2026-06-07
 url: /posts/2026/06/newton-okounkov-bodies/
 summary: "Newton-Okounkov bodies"
